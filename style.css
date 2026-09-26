@@ -1,0 +1,283 @@
+:root {
+--color-fondo: #986e4635;
+--color-tarjeta: #fff;
+--color-texto: #2f3e46;
+--color-acento: #f08a5d;
+--color-borde: #c9d1d6;
+--color-primario: #ffffffb5;
+--color-acento-oscuro: #c2632b;
+--radio: 8px;
+}
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: "Segoe UI", Arial, sans-serif;
+background: var(--color-fondo);
+color: var(--color-texto);
+line-height: 1.5;
+}
+
+
+.header {
+width: 100%;
+height: 100px;
+padding: 0 40px;
+display: flex;
+align-items: center;
+position: relative;
+background: #fff;
+border-bottom: 2px solid #d0d0d0;
+}
+
+.header-volver {
+display: flex;
+align-items: center;
+gap: 10px;
+color: #777;
+font-size: 1.4rem;
+text-decoration: none;
+}
+
+.header-volver:hover {
+color: #000;
+}
+
+.flecha {
+width: 50px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 2px solid #e5e5e5;
+border-radius: 15px;
+color: #c7c7c7;
+font-size: 3rem;
+line-height: 1;
+}
+
+.separador {
+color: #999;
+}
+
+.pagina-actual {
+color: #000;
+}
+
+.header-logo {
+width: 60px;
+height: 45px;
+margin-left: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #f0aa5b;border-radius: 25px;
+color: #fff;
+font-size: 32px;
+font-weight: bold;
+}
+
+
+.barra-superior {
+padding: 16px 24px;
+background: var(--color-primario);
+color: #080606;
+font-size: 1.2rem;
+font-weight: 600;
+}
+
+.lista li img {
+width: 38px;
+height: 38px;
+object-fit: contain;
+border-radius: 8px;
+}
+
+.contenedor {
+max-width: 420px;
+margin: 40px auto;
+padding: 0 16px;
+}
+
+.tarjeta {
+padding: 28px 24px;
+background: var(--color-tarjeta);
+border: 1px solid var(--color-borde);
+border-radius: var(--radio);
+}
+
+.tarjeta h1 {
+margin-bottom: 20px;
+font-size: 1.4rem;
+text-align: center;
+}
+
+.texto-ayuda {
+margin-bottom: 16px;
+font-size: .9rem;
+}
+
+
+.campo {
+margin-bottom: 16px;
+}
+
+.campo label {
+display: block;
+margin-bottom: 6px;
+font-size: .9rem;
+}
+
+.campo input,
+.campo select {
+width: 100%;
+padding: 10px 12px;
+border: 1px solid var(--color-borde);
+border-radius: var(--radio);
+font-size: 1rem;
+}
+
+.campo input:focus,
+.campo select:focus {
+outline: none;
+border-color: var(--color-acento);
+}
+
+
+.boton {
+display: block;
+width: 100%;
+margin-top: 8px;
+padding: 12px;
+background: var(--color-acento);
+color: #fff;
+border: none;
+border-radius: var(--radio);
+text-align: center;
+font-size: 1rem;
+font-weight: 600;
+text-decoration: none;
+cursor: pointer;
+}
+
+.boton:hover {
+background: var(--color-acento-oscuro);
+}
+
+
+.enlaces-secundarios {
+margin-top: 18px;
+text-align: center;
+font-size: .9rem;
+}
+
+.enlaces-secundarios a {
+color: var(--color-primario);
+text-decoration: none;
+}
+
+.enlaces-secundarios a:hover {
+text-decoration: underline;
+}
+
+
+.encabezado-menu {
+margin-bottom: 30px;
+text-align: center;
+}
+
+.encabezado-menu h1 {
+margin: 0;
+color: #2f3e46;
+font-size: 2rem;
+font-weight: 600;
+}
+
+.encabezado-menu p {
+margin: 8px;
+color: #777;
+font-size: 1rem;
+}
+
+
+.lista-menu {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.lista-menu li {
+margin-bottom: 12px;
+}
+
+.lista-menu a {
+display: flex;
+align-items: center;
+gap: 18px;
+min-height: 90px;
+padding: 12px 20px;
+background: var(--color-tarjeta);
+border: 2px solid var(--color-borde);
+border-radius: 12px;
+color: var(--color-texto);
+font-weight: 500;
+text-decoration: none;
+transition: .2s ease;
+}
+
+.lista-menu a:hover {
+border-color: var(--color-acento);
+}
+
+.lista-menu img {
+width: 60px;
+flex-shrink: 0;
+display: block;
+object-fit: contain;
+border: 2px solid #0c0b0bd6;
+border-radius: 10px;
+}
+
+.lista-menu span {
+font-size: 1.2rem;
+line-height: 1.2;
+}
+
+
+.resultado {
+margin-top: 18px;
+padding: 16px;
+background: var(--color-fondo);
+border: 1px dashed var(--color-borde);
+border-radius: var(--radio);
+font-size: .95rem;
+}
+
+.resultado h2 {
+margin-bottom: 8px;
+font-size: 1rem;
+}
+
+.resultado ul {
+list-style: none;
+}
+
+.resultado li {
+margin-bottom: 4px;
+}
+
+.volver {
+display: inline-block;
+margin-top: 18px;
+color: var(--color-primario);
+font-size: .9rem;
+text-decoration: none;
+}
+
+.volver:hover {
+text-decoration: underline;
+}
